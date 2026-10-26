@@ -3,219 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diamante Valet Parking | Tijuana</title>
-    <!-- Tailwind CSS desde CDN para diseño moderno sin configurar nada -->
+    <title>Tony's Valet Parking | Tijuana</title>
+    <!-- Tailwind CSS desde CDN para diseño moderno sin configuraciones -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Smooth scrolling y toque táctil optimizado */
         html { scroll-behavior: smooth; }
         .touch-btn { touch-action: manipulation; }
+        .gold-glow { box-shadow: 0 0 20px rgba(234, 179, 8, 0.15); }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans pb-20">
+<body class="bg-gray-950 text-gray-100 font-sans pb-24 selection:bg-yellow-500 selection:text-black">
+
+    <!-- BARRA ESTADO EN VIVO -->
+    <div class="bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-600 text-black text-center py-1.5 px-3 text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+        </span>
+        <span>Servicio disponible hoy en Tijuana | Col. Cacho & Alrededores</span>
+    </div>
 
     <!-- HEADER / ENCABEZADO FIJO -->
-    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-yellow-600/30 px-4 py-3 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-yellow-500/20 px-4 py-3 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-car-side text-yellow-500 text-2xl"></i>
-            <span class="font-bold text-lg tracking-wide text-white">DIAMANTE <span class="text-yellow-500">VALET</span></span>
+            <div class="bg-yellow-500 text-black p-1.5 rounded-lg font-black">
+                <i class="fa-solid fa-car-side text-lg"></i>
+            </div>
+            <div>
+                <span class="font-extrabold text-base tracking-wide text-white block leading-none">TONY'S <span class="text-yellow-500">VALET</span></span>
+                <span class="text-[9px] text-gray-400 tracking-wider">PARKING TIJUANA</span>
+            </div>
         </div>
-        <a href="#cotizador" class="bg-yellow-500 hover:bg-yellow-600 text-gray-950 font-bold px-3 py-1.5 rounded-full text-xs transition-all flex items-center gap-1 shadow-lg shadow-yellow-500/20">
+        <a href="#cotizador" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold px-3.5 py-2 rounded-xl text-xs transition-all flex items-center gap-1.5 shadow-lg shadow-yellow-500/20">
             <i class="fa-solid fa-calculator"></i> Cotizar
         </a>
     </header>
 
-    <!-- HERO SECTION (Optimizada para QR en Celulares) -->
-    <section class="px-5 py-10 text-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
-        <span class="inline-block bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-3 py-1 rounded-full border border-yellow-500/20 mb-3">
-            📍 Tijuana y Valle de Guadalupe
-        </span>
+    <!-- HERO SECTION -->
+    <section class="px-5 py-8 text-center bg-radial from-gray-900 to-gray-950 relative overflow-hidden">
+        <div class="inline-flex items-center gap-1.5 bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-yellow-500/30 mb-4 gold-glow">
+            <i class="fa-solid fa-award text-yellow-500"></i>
+            <span>5 Años de Experiencia en Tijuana</span>
+        </div>
+        
         <h1 class="text-3xl font-extrabold text-white leading-tight mb-3">
-            Seguridad y Elegancia para tus Eventos y Negocios
+            Elegancia, Control y Seguridad para tus Vehículos
         </h1>
-        <p class="text-gray-300 text-sm mb-6 leading-relaxed">
-            Servicio profesional de Valet Parking y administración de estacionamientos.
+        
+        <p class="text-gray-300 text-xs mb-6 leading-relaxed max-w-md mx-auto">
+            Atención profesional por <span class="text-yellow-400 font-semibold">José Antonio Hernández</span>. Especialistas en restaurantes, plazas comerciales y eventos privados.
         </p>
         
-        <div class="flex flex-col gap-3">
-            <a href="#cotizador" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-yellow-500/20 text-center flex items-center justify-center gap-2">
-                <i class="fa-solid fa-clipboard-check text-lg"></i> Cotizar Servicio Ahora
+        <div class="flex flex-col gap-3 max-w-xs mx-auto">
+            <a href="#cotizador" class="touch-btn bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-gray-950 font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-yellow-500/20 text-center flex items-center justify-center gap-2 text-sm">
+                <i class="fa-solid fa-bolt text-base"></i> Cotizar Servicio
             </a>
-            <a href="#trabajo" class="touch-btn bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 font-medium py-3 px-6 rounded-xl text-center flex items-center justify-center gap-2 text-sm">
-                <i class="fa-solid fa-id-card"></i> ¿Buscas Trabajo? Postúlate
+            <a href="#paquetes" class="touch-btn bg-gray-900 hover:bg-gray-800 text-gray-200 border border-gray-800 font-medium py-3 px-6 rounded-xl text-center flex items-center justify-center gap-2 text-xs">
+                <i class="fa-solid fa-tags text-yellow-500"></i> Ver Tarifas y Paquetes
             </a>
+        </div>
+
+        <!-- METRICAS / NÚMEROS DE CONFIANZA -->
+        <div class="grid grid-cols-3 gap-2 mt-8 pt-6 border-t border-gray-800/80">
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">5+</div>
+                <div class="text-[10px] text-gray-400">Años Experiencia</div>
+            </div>
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">100%</div>
+                <div class="text-[10px] text-gray-400">Personal Validado</div>
+            </div>
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">6 Días</div>
+                <div class="text-[10px] text-gray-400">Servicio Semanal</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTAURANTES ALIADOS (COLONIA CACHO Y LAS TORRES) -->
+    <section class="px-5 py-6 bg-gray-900/40 border-y border-gray-800/50">
+        <div class="text-center mb-4">
+            <span class="text-yellow-500 text-[10px] font-bold tracking-widest uppercase">Presencia Local</span>
+            <h2 class="text-base font-bold text-white">Restaurantes Aliados en Tijuana</h2>
+            <p class="text-xs text-gray-400">Encuentra a nuestro equipo en la Colonia Cacho y zonas exclusivas</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-w-md mx-auto">
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-utensils"></i></div>
+                <div>
+                    <h3 class="text-xs font-bold text-white">The Sushi Tap</h3>
+                    <p class="text-[10px] text-gray-400">La Cacho</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-fish"></i></div>
+                <div>
+                    <h3 class="text-xs font-bold text-white">La Postal Teriyaki Sushi</h3>
+                    <p class="text-[10px] text-gray-400">La Cacho</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-building"></i></div>
+                <div>
+                    <h3 class="text-xs font-bold text-white">La Postal</h3>
+                    <p class="text-[10px] text-gray-400">Las Torres</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-anchor"></i></div>
+                <div>
+                    <h3 class="text-xs font-bold text-white">Mariscos Mar Negro</h3>
+                    <p class="text-[10px] text-gray-400">Tijuana</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3 sm:col-span-2">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-pizza-slice"></i></div>
+                <div>
+                    <h3 class="text-xs font-bold text-white">Meno Male</h3>
+                    <p class="text-[10px] text-gray-400">Tijuana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFAS Y PAQUETES DE SERVICIO -->
+    <section id="paquetes" class="px-5 py-8 max-w-md mx-auto">
+        <div class="text-center mb-6">
+            <span class="text-yellow-500 text-[10px] font-bold tracking-widest uppercase">Precios Transparentes</span>
+            <h2 class="text-lg font-bold text-white">Planes de Servicio Fijo</h2>
+            <p class="text-xs text-gray-400">Turnos de 9 horas diarias / 6 días a la semana</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- SERVICIO 1 -->
+            <div class="bg-gray-900 border border-gray-800 p-5 rounded-2xl relative overflow-hidden">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <span class="bg-gray-800 text-gray-300 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-gray-700">Opción Básica</span>
+                        <h3 class="text-base font-bold text-white mt-2">1 Valet (9 Hrs)</h3>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xl font-extrabold text-yellow-500">$5,400</span>
+                        <span class="text-[10px] text-gray-400 block">MXN / semanal</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400 mb-3">$900 pesos por día (6 días a la semana).</p>
+                <ul class="text-xs text-gray-300 space-y-1.5 mb-4">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> 1 Empleado capacitado</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Turno continuo de 9 horas</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Boletos de control incluidos</li>
+                </ul>
+                <button onclick="cotizarPaquete('Servicio 1 Valet (9 hrs) - $5,400/sem')" class="touch-btn w-full bg-gray-800 hover:bg-gray-700 text-yellow-400 font-bold py-2.5 rounded-xl text-xs border border-yellow-500/20">
+                    Solicitar Este Plan
+                </button>
+            </div>
+
+            <!-- SERVICIO 2 -->
+            <div class="bg-gradient-to-b from-gray-900 to-gray-950 border-2 border-yellow-500/50 p-5 rounded-2xl relative overflow-hidden gold-glow">
+                <div class="absolute top-0 right-0 bg-yellow-500 text-black text-[9px] font-black px-3 py-1 rounded-bl-lg uppercase">
+                    Más Solicitado
+                </div>
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <span class="bg-yellow-500/10 text-yellow-400 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-yellow-500/20">Para Mayor Flujo</span>
+                        <h3 class="text-base font-bold text-white mt-2">2 Valets (9 Hrs)</h3>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xl font-extrabold text-yellow-500">$10,800</span>
+                        <span class="text-[10px] text-gray-400 block">MXN / semanal</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400 mb-3">$1,800 pesos diarios (6 días a la semana).</p>
+                <ul class="text-xs text-gray-300 space-y-1.5 mb-4">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> 2 Empleados en coordinación</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Ideal para horas pico de restaurante</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Control ágil de entradas y salidas</li>
+                </ul>
+                <button onclick="cotizarPaquete('Servicio 2 Valets (9 hrs) - $10,800/sem')" class="touch-btn w-full bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-2.5 rounded-xl text-xs shadow-lg shadow-yellow-500/20">
+                    Solicitar Este Plan
+                </button>
+            </div>
+
+            <!-- DÍAS FESTIVOS -->
+            <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
+                            <i class="fa-solid fa-calendar-star text-yellow-500"></i> Servicio en Días Festivos
+                        </h3>
+                        <p class="text-[11px] text-gray-400 mt-0.5">1 Valet: $1,800/día | 2 Valets: $3,600/día</p>
+                    </div>
+                    <button onclick="cotizarPaquete('Servicio para Días Festivos')" class="touch-btn bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 font-semibold">
+                        Consultar
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- COTIZADOR DINÁMICO (PREGUNTAS INTERACTIVAS) -->
-    <section id="cotizador" class="px-4 py-8 bg-gray-800/50 my-4 rounded-3xl mx-3 border border-yellow-500/20">
-        <div class="text-center mb-6">
-            <h2 class="text-xl font-bold text-yellow-500 flex items-center justify-center gap-2">
-                <i class="fa-solid fa-sliders"></i> Cotizador Rápido
-            </h2>
-            <p class="text-xs text-gray-400 mt-1">Responde estas preguntas y recibe tu presupuesto directo en WhatsApp</p>
+    <section id="cotizador" class="px-4 py-7 bg-gray-900/80 my-4 rounded-3xl mx-3 border border-yellow-500/30 max-w-md mx-auto">
+        <div class="text-center mb-5">
+            <span class="bg-yellow-500/10 text-yellow-400 text-[10px] font-bold px-2.5 py-1 rounded-full border border-yellow-500/20">Atención Directa</span>
+            <h2 class="text-lg font-bold text-white mt-1.5">Cotizador de Servicio</h2>
+            <p class="text-xs text-gray-400">Responde los datos y se abrirá el WhatsApp con la solicitud lista para enviar</p>
         </div>
 
-        <form id="formCotizador" onsubmit="enviarCotizacionWhatsApp(event)" class="space-y-4">
-            
-            <!-- Pregunta 1: Tipo de Servicio -->
+        <form id="formCotizador" onsubmit="enviarCotizacionWhatsApp(event)" class="space-y-3.5">
             <div>
-                <label class="block text-xs font-semibold text-gray-300 mb-1">1. ¿Qué tipo de servicio necesitas?</label>
-                <select id="tipoServicio" class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl p-3 text-sm focus:border-yellow-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">1. ¿Qué tipo de servicio buscas?</label>
+                <select id="tipoServicio" class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
+                    <option value="Restaurante / Bar (Servicio Fijo)">Restaurante / Bar (Servicio Fijo)</option>
                     <option value="Evento Privado (Boda, XV, Cumpleaños)">Evento Privado (Boda, Fiesta, etc.)</option>
-                    <option value="Restaurante / Bar / Plaza Commercial">Restaurante / Bar / Plaza</option>
-                    <option value="Administración de Estacionamiento">Administración de Estacionamiento</option>
-                    <option value="Renta de Espacios / Terreno">Renta / Gestión de Espacio</option>
+                    <option value="Plaza Comercial / Estacionamiento">Plaza Comercial / Estacionamiento</option>
+                    <option value="Servicio Especial Días Festivos">Servicio Especial Días Festivos</option>
                 </select>
             </div>
 
-            <!-- Pregunta 2: Ubicación / Zona -->
             <div>
-                <label class="block text-xs font-semibold text-gray-300 mb-1">2. Ubicación o Zona en Tijuana</label>
-                <input type="text" id="ubicacion" placeholder="Ej. Zona Río, Playas, Valle de Guadalupe" required class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl p-3 text-sm focus:border-yellow-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">2. Ubicación o Colonia en Tijuana</label>
+                <input type="text" id="ubicacion" placeholder="Ej. Col. Cacho, Zona Río, Playas" required class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
             </div>
 
-            <!-- Pregunta 3: Capacidad de Autos / Invitados -->
             <div>
-                <label class="block text-xs font-semibold text-gray-300 mb-1">3. Estimado de autos o espacio requerido</label>
-                <select id="capacidad" class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl p-3 text-sm focus:border-yellow-500 outline-none">
-                    <option value="20 a 50 Vehículos">20 a 50 Vehículos</option>
-                    <option value="50 a 100 Vehículos">50 a 100 Vehículos</option>
-                    <option value="Más de 100 Vehículos">Más de 100 Vehículos</option>
-                    <option value="Servicio Continuo Diario">Servicio Continuo (Diario/Mensual)</option>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">3. Personal o Capacidad Requerida</label>
+                <select id="capacidad" class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
+                    <option value="1 Valet Parking (9 Horas)">1 Valet Parking (9 Horas)</option>
+                    <option value="2 Valets Parking (9 Horas)">2 Valets Parking (9 Horas)</option>
+                    <option value="3 o más Valets (Evento Grande)">3 o más Valets (Evento Grande)</option>
                 </select>
             </div>
 
-            <!-- Pregunta 4: Presupuesto Aproximado -->
             <div>
-                <label class="block text-xs font-semibold text-gray-300 mb-1">4. Rango de Presupuesto estimado</label>
-                <select id="presupuesto" class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl p-3 text-sm focus:border-yellow-500 outline-none">
-                    <option value="Estándar / Por Cotizar">Prefiero recibir recomendación</option>
-                    <option value="Económico / Ajustado">Presupuesto Limitado</option>
-                    <option value="Premium / Todo Incluido">Servicio VIP Todo Incluido</option>
-                </select>
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">4. Tu Nombre o Nombre del Negocio</label>
+                <input type="text" id="nombreCliente" placeholder="Ej. Carlos Mendoza / Restaurante X" required class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
             </div>
 
-            <!-- Pregunta 5: Datos del Cliente -->
-            <div class="pt-2">
-                <label class="block text-xs font-semibold text-gray-300 mb-1">Tu Nombre o Empresa</label>
-                <input type="text" id="nombreCliente" placeholder="Ej. Juan Pérez" required class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl p-3 text-sm focus:border-yellow-500 outline-none">
-            </div>
-
-            <button type="submit" class="touch-btn w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-base">
-                <i class="fa-brands fa-whatsapp text-xl"></i> Enviar Cotización a WhatsApp
+            <button type="submit" class="touch-btn w-full bg-green-600 hover:bg-green-500 text-white font-extrabold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm mt-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Enviar a José Antonio por WhatsApp
             </button>
         </form>
     </section>
 
-    <!-- NUESTROS SERVICIOS Y PRECIOS BASE -->
-    <section class="px-5 py-6">
-        <h2 class="text-lg font-bold text-white mb-4 text-center">Nuestros Servicios</h2>
-        <div class="grid grid-cols-1 gap-4">
-            
-            <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700">
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fa-solid fa-champagne-glasses text-yellow-500 text-xl"></i>
-                    <h3 class="font-bold text-white">Eventos Especiales</h3>
-                </div>
-                <p class="text-xs text-gray-300 mb-3">Choferes uniformados, boletos de control y seguro de responsabilidad civil para tus fiestas.</p>
-                <span class="text-yellow-500 font-bold text-xs">Cotización por hora / evento</span>
-            </div>
-
-            <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700">
-                <div class="flex items-center gap-3 mb-2">
-                    <i class="fa-solid fa-utensils text-yellow-500 text-xl"></i>
-                    <h3 class="font-bold text-white">Restaurantes y Plazas</h3>
-                </div>
-                <p class="text-xs text-gray-300 mb-3">Operación fija diaria o fin de semana. Aumenta el flujo de clientes en tu establecimiento.</p>
-                <span class="text-yellow-500 font-bold text-xs">Convenios mensuales</span>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- DONDE ESTAMOS / RESTAURANTES ALIADOS -->
-    <section class="px-5 py-6 bg-gray-800/30">
-        <h2 class="text-lg font-bold text-white mb-2 text-center">Restaurantes y Aliados</h2>
-        <p class="text-xs text-gray-400 text-center mb-4">Lugares en Tijuana que confían en nosotros</p>
+    <!-- PREGUNTAS FRECUENTES (ACORDEÓN INTERACTIVO) -->
+    <section class="px-5 py-6 max-w-md mx-auto">
+        <h2 class="text-base font-bold text-white mb-3 text-center">Preguntas Frecuentes</h2>
         
-        <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-yellow-500"></i> Restaurante 1 (Zona Río)
-            </span>
-            <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-yellow-500"></i> Plaza Comercial (Agua Caliente)
-            </span>
-            <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-yellow-500"></i> Salón de Eventos (Playas)
-            </span>
-        </div>
-    </section>
+        <div class="space-y-2">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(1)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
+                    <span>¿Qué experiencia tiene el personal de manejo?</span>
+                    <i id="faq-icon-1" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
+                </button>
+                <div id="faq-ans-1" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
+                    Contamos con más de 5 años de trayectoria en Tijuana. Todo nuestro personal cuenta con licencia vigente y capacitación previa en manejo de autos automáticos y estándar.
+                </div>
+            </div>
 
-    <!-- HISTORIA / QUIÉNES SOMOS -->
-    <section class="px-5 py-6">
-        <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-5 rounded-2xl border border-gray-700">
-            <h2 class="text-base font-bold text-yellow-500 mb-2">Sobre Diamante Valet Parking</h2>
-            <p class="text-xs text-gray-300 leading-relaxed">
-                Empresa 100% tijuanense dedicada a brindar tranquilidad y logística vehicular de alto nivel. Cuidamos cada automóvil con personal capacitado, honesto y con experiencia comprobada de manejo.
-            </p>
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(2)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
+                    <span>¿Cómo funcionan las boletas de control?</span>
+                    <i id="faq-icon-2" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
+                </button>
+                <div id="faq-ans-2" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
+                    Entregamos un boleto foliado numerado a cada cliente al recibir su auto para garantizar que únicamente el dueño pueda retirar su vehículo.
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(3)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
+                    <span>¿Cobran por evento único o por semana?</span>
+                    <i id="faq-icon-3" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
+                </button>
+                <div id="faq-ans-3" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
+                    Manejamos ambos esquemas: convenio semanal continuo de 6 días para restaurantes o costo por evento específico de un solo día.
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- SECCIÓN DE TRABAJO (RECLUTAMIENTO) -->
-    <section id="trabajo" class="px-5 py-6">
-        <div class="bg-yellow-500/10 border border-yellow-500/30 p-5 rounded-2xl text-center">
+    <section id="trabajo" class="px-5 py-6 max-w-md mx-auto">
+        <div class="bg-gradient-to-br from-yellow-500/10 via-gray-900 to-gray-950 border border-yellow-500/30 p-5 rounded-2xl text-center">
             <i class="fa-solid fa-user-tie text-yellow-500 text-3xl mb-2"></i>
-            <h2 class="text-base font-bold text-white">¿Quieres trabajar con nosotros?</h2>
+            <h2 class="text-base font-bold text-white">¿Buscas empleo como Valet Parking?</h2>
             <p class="text-xs text-gray-300 mt-1 mb-4">
-                Buscamos choferes con licencia vigente y excelente actitud de servicio.
+                Únete al equipo de Tony's Valet Parking. Requisitos: Licencia de conducir vigente, puntualidad y excelente actitud.
             </p>
             <button onclick="solicitarEmpleoWhatsApp()" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold text-xs py-3 px-5 rounded-xl shadow w-full flex items-center justify-center gap-2">
-                <i class="fa-brands fa-whatsapp text-base"></i> Pedir Empleo por WhatsApp
+                <i class="fa-brands fa-whatsapp text-base"></i> Postularme por WhatsApp
             </button>
         </div>
     </section>
 
+    <!-- CONTACTO DIRECTO -->
+    <footer class="text-center py-6 px-4 border-t border-gray-900 text-gray-500 text-[11px]">
+        <p class="font-bold text-gray-300 mb-1">Tony's Valet Parking Tijuana</p>
+        <p class="mb-1">Contacto Directo: José Antonio Hernández de la Cruz</p>
+        <p class="text-yellow-500 font-semibold mb-3"><i class="fa-solid fa-phone"></i> 664 318 6915</p>
+        <p class="text-[10px] text-gray-600">© 2026 Tony's Valet Parking. Todos los derechos reservados.</p>
+    </footer>
+
     <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP -->
-    <a href="https://wa.me/526641234567?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center text-2xl hover:scale-110 transition-all">
+    <a href="https://wa.me/526643186915?text=Hola%20José%20Antonio,%20me%20gustaría%20obtener%20información%20sobre%20Tony's%20Valet%20Parking" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center text-2xl hover:scale-110 transition-all gold-glow">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- SCRIPT PARA CONECTAR EL COTIZADOR AL TELEFONO DE TU PAPÁ -->
+    <!-- LÓGICA DE JAVASCRIPT -->
     <script>
-        // ⚠️ CAMBIA ESTE NÚMERO POR EL NÚMERO DE WHATSAPP DE TU PAPÁ (Formato México: 52 + 10 dígitos)
-        const TELEFONO_PAPA = "526641234567";
+        // Teléfono directo de José Antonio (52 + 10 dígitos)
+        const TELEFONO_PAPA = "526643186915";
 
         function enviarCotizacionWhatsApp(e) {
             e.preventDefault();
-            
             const servicio = document.getElementById('tipoServicio').value;
             const ubicacion = document.getElementById('ubicacion').value;
             const capacidad = document.getElementById('capacidad').value;
-            const presupuesto = document.getElementById('presupuesto').value;
             const nombre = document.getElementById('nombreCliente').value;
 
-            const mensaje = `*NUEVA COTIZACIÓN DESDE LA WEB*%0A%0A` +
+            const mensaje = `*NUEVA COTIZACIÓN WEB - TONY'S VALET*%0A%0A` +
                 `👤 *Cliente:* ${nombre}%0A` +
                 `🚗 *Servicio:* ${servicio}%0A` +
                 `📍 *Ubicación:* ${ubicacion}%0A` +
-                `🚘 *Capacidad:* ${capacidad}%0A` +
-                `💰 *Presupuesto:* ${presupuesto}%0A%0A` +
-                `_Enviado desde la página web_`;
+                `🚘 *Personal:* ${capacidad}%0A%0A` +
+                `_Enviado desde el sitio web de Tony's Valet Parking_`;
 
-            const url = `https://wa.me/${TELEFONO_PAPA}?text=${mensaje}`;
-            window.open(url, '_blank');
+            window.open(`https://wa.me/${TELEFONO_PAPA}?text=${mensaje}`, '_blank');
+        }
+
+        function cotizarPaquete(nombrePaquete) {
+            const mensaje = `*INTERÉS EN PAQUETE - TONY'S VALET*%0A%0A` +
+                `Hola José Antonio, me interesa contratar el plan: *${nombrePaquete}*. ¿Me podrías dar más detalles?`;
+            
+            window.open(`https://wa.me/${TELEFONO_PAPA}?text=${mensaje}`, '_blank');
         }
 
         function solicitarEmpleoWhatsApp() {
-            const mensaje = `*SOLICITUD DE EMPLEO*%0A%0A` +
-                `Hola, vi su página web y me interesa aplicar para trabajar como Chofer / Valet Parking.%0A` +
-                `Cuento con licencia de conducir vigente. ¿Cuáles son los requisitos?`;
+            const mensaje = `*SOLICITUD DE EMPLEO - VALET PARKING*%0A%0A` +
+                `Hola José Antonio, vi el sitio web y me interesa trabajar como chofer en Tony's Valet Parking. Cuento con licencia vigente.`;
 
-            const url = `https://wa.me/${TELEFONO_PAPA}?text=${mensaje}`;
-            window.open(url, '_blank');
+            window.open(`https://wa.me/${TELEFONO_PAPA}?text=${mensaje}`, '_blank');
+        }
+
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                ans.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
         }
     </script>
 </body>
