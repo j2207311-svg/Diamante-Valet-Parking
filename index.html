@@ -11,197 +11,197 @@
     <style>
         html { scroll-behavior: smooth; }
         .touch-btn { touch-action: manipulation; }
-        .silver-glow { box-shadow: 0 0 20px rgba(226, 232, 240, 0.15); }
+        .gold-glow { box-shadow: 0 0 20px rgba(234, 179, 8, 0.2); }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans pb-24 selection:bg-slate-200 selection:text-slate-950">
+<body class="bg-gray-950 text-gray-100 font-sans pb-24 selection:bg-yellow-500 selection:text-black">
 
     <!-- BARRA ESTADO EN VIVO -->
-    <div class="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 text-slate-100 text-center py-1.5 px-3 text-xs font-semibold flex items-center justify-center gap-2 border-b border-slate-700">
+    <div class="bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-600 text-black text-center py-1.5 px-3 text-xs font-bold flex items-center justify-center gap-2 shadow-md">
         <span class="relative flex h-2 w-2">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
         </span>
-        <span>Servicio Activo en Tijuana | Col. Cacho & Zonas Comerciales</span>
+        <span>Servicio disponible hoy en Tijuana | Col. Cacho & Alrededores</span>
     </div>
 
-    <!-- HEADER FIJO CON ESTILO AZUL MARINO Y PLATA -->
-    <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 px-4 py-2.5 flex justify-between items-center">
+    <!-- HEADER / ENCABEZADO FIJO CON LOGO -->
+    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-yellow-500/20 px-4 py-2.5 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <!-- ARCHIVO DE LOGO SUBIDO EN GITHUB -->
-            <img src="IMG_3166.jpg" alt="Tony's Valet Parking" class="h-9 w-auto rounded border border-slate-700 shadow-sm">
+            <!-- LOGO OFICIAL -->
+            <img src="logo.jpg" alt="Tony's Valet Parking Logo" class="h-9 w-auto rounded-md border border-gray-800">
         </div>
-        <a href="#cotizador" class="touch-btn bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-3.5 py-2 rounded-xl text-xs transition-all flex items-center gap-1.5 shadow-lg shadow-emerald-900/30">
+        <a href="#cotizador" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold px-3.5 py-2 rounded-xl text-xs transition-all flex items-center gap-1.5 shadow-lg shadow-yellow-500/20">
             <i class="fa-solid fa-calculator"></i> Cotizar
         </a>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="px-5 py-8 text-center bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 relative overflow-hidden">
+    <!-- HERO SECTION CON LOGO DESTACADO -->
+    <section class="px-5 py-8 text-center bg-radial from-gray-900 to-gray-950 relative overflow-hidden">
         
         <!-- LOGO PRINCIPAL -->
-        <div class="mb-5 flex justify-center">
-            <img src="IMG_3166.jpg" alt="Tony's Valet Parking" class="h-28 w-auto rounded-2xl border border-slate-700 silver-glow">
+        <div class="mb-4 flex justify-center">
+            <img src="logo.jpg" alt="Tony's Valet Parking" class="h-28 w-auto rounded-2xl shadow-2xl border border-yellow-500/30 gold-glow">
         </div>
 
-        <div class="inline-flex items-center gap-1.5 bg-slate-800/80 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-full border border-slate-700 mb-4">
-            <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+        <div class="inline-flex items-center gap-1.5 bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-yellow-500/30 mb-4">
+            <i class="fa-solid fa-award text-yellow-500"></i>
             <span>5 Años de Experiencia en Tijuana</span>
         </div>
         
         <h1 class="text-3xl font-extrabold text-white leading-tight mb-3">
-            Elegancia, Control y Seguridad Vehicular
+            Elegancia, Control y Seguridad para tus Vehículos
         </h1>
         
-        <p class="text-slate-300 text-xs mb-6 leading-relaxed max-w-md mx-auto">
-            Atención profesional para restaurantes, salones de eventos y plazas comerciales en Tijuana.
+        <p class="text-gray-300 text-xs mb-6 leading-relaxed max-w-md mx-auto">
+            Atención profesional y personalizada. Especialistas en restaurantes, plazas comerciales y eventos privados.
         </p>
         
         <div class="flex flex-col gap-3 max-w-xs mx-auto">
-            <a href="#cotizador" class="touch-btn bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-950/50 text-center flex items-center justify-center gap-2 text-sm">
+            <a href="#cotizador" class="touch-btn bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-gray-950 font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-yellow-500/20 text-center flex items-center justify-center gap-2 text-sm">
                 <i class="fa-solid fa-bolt text-base"></i> Cotizar Servicio
             </a>
-            <a href="#paquetes" class="touch-btn bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-medium py-3 px-6 rounded-xl text-center flex items-center justify-center gap-2 text-xs">
-                <i class="fa-solid fa-tags text-slate-400"></i> Ver Tarifas y Paquetes
+            <a href="#paquetes" class="touch-btn bg-gray-900 hover:bg-gray-800 text-gray-200 border border-gray-800 font-medium py-3 px-6 rounded-xl text-center flex items-center justify-center gap-2 text-xs">
+                <i class="fa-solid fa-tags text-yellow-500"></i> Ver Tarifas y Paquetes
             </a>
         </div>
 
-        <!-- METRICAS DE CONFIANZA -->
-        <div class="grid grid-cols-3 gap-2 mt-8 pt-6 border-t border-slate-800">
-            <div class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
-                <div class="text-slate-100 font-extrabold text-base">5+</div>
-                <div class="text-[10px] text-slate-400">Años Experiencia</div>
+        <!-- METRICAS / NÚMEROS DE CONFIANZA -->
+        <div class="grid grid-cols-3 gap-2 mt-8 pt-6 border-t border-gray-800/80">
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">5+</div>
+                <div class="text-[10px] text-gray-400">Años Experiencia</div>
             </div>
-            <div class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
-                <div class="text-slate-100 font-extrabold text-base">100%</div>
-                <div class="text-[10px] text-slate-400">Personal Calificado</div>
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">100%</div>
+                <div class="text-[10px] text-gray-400">Personal Validado</div>
             </div>
-            <div class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
-                <div class="text-slate-100 font-extrabold text-base">6 Días</div>
-                <div class="text-[10px] text-slate-400">Servicio Semanal</div>
+            <div class="bg-gray-900/50 p-2.5 rounded-xl border border-gray-800">
+                <div class="text-yellow-500 font-extrabold text-base">6 Días</div>
+                <div class="text-[10px] text-gray-400">Servicio Semanal</div>
             </div>
         </div>
     </section>
 
-    <!-- RESTAURANTES Y ESTABLECIMIENTOS ALIADOS (REPRESENTADOS EN LLETREROS REALES) -->
-    <section class="px-5 py-6 bg-slate-900/40 border-y border-slate-800">
+    <!-- RESTAURANTES ALIADOS -->
+    <section class="px-5 py-6 bg-gray-900/40 border-y border-gray-800/50">
         <div class="text-center mb-4">
-            <span class="text-emerald-400 text-[10px] font-bold tracking-widest uppercase">Puntos de Atención</span>
-            <h2 class="text-base font-bold text-white">Establecimientos Aliados en Tijuana</h2>
-            <p class="text-xs text-slate-400">Encuentra a nuestro personal en los mejores lugares</p>
+            <span class="text-yellow-500 text-[10px] font-bold tracking-widest uppercase">Presencia Local</span>
+            <h2 class="text-base font-bold text-white">Restaurantes Aliados en Tijuana</h2>
+            <p class="text-xs text-gray-400">Encuentra a nuestro equipo en la Colonia Cacho y zonas exclusivas</p>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-w-md mx-auto">
-            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
-                <div class="bg-slate-800 p-2 rounded-lg text-emerald-400"><i class="fa-solid fa-utensils"></i></div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-utensils"></i></div>
                 <div>
                     <h3 class="text-xs font-bold text-white">The Sushi Tap</h3>
-                    <p class="text-[10px] text-slate-400">La Cacho</p>
+                    <p class="text-[10px] text-gray-400">La Cacho</p>
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
-                <div class="bg-slate-800 p-2 rounded-lg text-emerald-400"><i class="fa-solid fa-bowl-rice"></i></div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-fish"></i></div>
                 <div>
                     <h3 class="text-xs font-bold text-white">La Postal Teriyaki Sushi</h3>
-                    <p class="text-[10px] text-slate-400">La Cacho</p>
+                    <p class="text-[10px] text-gray-400">La Cacho</p>
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
-                <div class="bg-slate-800 p-2 rounded-lg text-emerald-400"><i class="fa-solid fa-dragon"></i></div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-building"></i></div>
                 <div>
-                    <h3 class="text-xs font-bold text-white">Pekín. Mansión Roja</h3>
-                    <p class="text-[10px] text-slate-400">Tijuana</p>
+                    <h3 class="text-xs font-bold text-white">La Postal</h3>
+                    <p class="text-[10px] text-gray-400">Las Torres</p>
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-3">
-                <div class="bg-slate-800 p-2 rounded-lg text-emerald-400"><i class="fa-solid fa-cake-candles"></i></div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-anchor"></i></div>
                 <div>
-                    <h3 class="text-xs font-bold text-white">KIDS Salón de Eventos</h3>
-                    <p class="text-[10px] text-slate-400">Tijuana</p>
+                    <h3 class="text-xs font-bold text-white">Mariscos Mar Negro</h3>
+                    <p class="text-[10px] text-gray-400">Tijuana</p>
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center gap-3 sm:col-span-2">
-                <div class="bg-slate-800 p-2 rounded-lg text-emerald-400"><i class="fa-solid fa-building"></i></div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center gap-3 sm:col-span-2">
+                <div class="bg-yellow-500/10 p-2 rounded-lg text-yellow-500"><i class="fa-solid fa-pizza-slice"></i></div>
                 <div>
-                    <h3 class="text-xs font-bold text-white">La Postal (Las Torres) & Mariscos Mar Negro</h3>
-                    <p class="text-[10px] text-slate-400">Tijuana</p>
+                    <h3 class="text-xs font-bold text-white">Meno Male</h3>
+                    <p class="text-[10px] text-gray-400">Tijuana</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TARIFAS Y PAQUETES -->
+    <!-- TARIFAS Y PAQUETES DE SERVICIO -->
     <section id="paquetes" class="px-5 py-8 max-w-md mx-auto">
         <div class="text-center mb-6">
-            <span class="text-emerald-400 text-[10px] font-bold tracking-widest uppercase">Precios Claras</span>
+            <span class="text-yellow-500 text-[10px] font-bold tracking-widest uppercase">Precios Transparentes</span>
             <h2 class="text-lg font-bold text-white">Planes de Servicio Fijo</h2>
-            <p class="text-xs text-slate-400">Turnos de 9 horas diarias / 6 días a la semana</p>
+            <p class="text-xs text-gray-400">Turnos de 9 horas diarias / 6 días a la semana</p>
         </div>
 
         <div class="space-y-4">
             <!-- SERVICIO 1 -->
-            <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl relative overflow-hidden">
+            <div class="bg-gray-900 border border-gray-800 p-5 rounded-2xl relative overflow-hidden">
                 <div class="flex justify-between items-start mb-2">
                     <div>
-                        <span class="bg-slate-800 text-slate-300 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-slate-700">Opción Básica</span>
+                        <span class="bg-gray-800 text-gray-300 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-gray-700">Opción Básica</span>
                         <h3 class="text-base font-bold text-white mt-2">1 Valet (9 Hrs)</h3>
                     </div>
                     <div class="text-right">
-                        <span class="text-xl font-extrabold text-slate-100">$5,400</span>
-                        <span class="text-[10px] text-slate-400 block">MXN / semanal</span>
+                        <span class="text-xl font-extrabold text-yellow-500">$5,400</span>
+                        <span class="text-[10px] text-gray-400 block">MXN / semanal</span>
                     </div>
                 </div>
-                <p class="text-xs text-slate-400 mb-3">$900 pesos por día (6 días a la semana)[cite: 4].</p>
-                <ul class="text-xs text-slate-300 space-y-1.5 mb-4">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> 1 Empleado capacitado[cite: 4]</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> Turno continuo de 9 horas[cite: 4]</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> Boletos de control incluidos</li>
+                <p class="text-xs text-gray-400 mb-3">$900 pesos por día (6 días a la semana)[cite: 4].</p>
+                <ul class="text-xs text-gray-300 space-y-1.5 mb-4">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> 1 Empleado capacitado[cite: 4]</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Turno continuo de 9 horas[cite: 4]</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Boletos de control incluidos</li>
                 </ul>
-                <button onclick="cotizarPaquete('Servicio 1 Valet (9 hrs) - $5,400/sem')" class="touch-btn w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-2.5 rounded-xl text-xs border border-slate-700">
+                <button onclick="cotizarPaquete('Servicio 1 Valet (9 hrs) - $5,400/sem')" class="touch-btn w-full bg-gray-800 hover:bg-gray-700 text-yellow-400 font-bold py-2.5 rounded-xl text-xs border border-yellow-500/20">
                     Solicitar Este Plan
                 </button>
             </div>
 
             <!-- SERVICIO 2 -->
-            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border-2 border-emerald-500/40 p-5 rounded-2xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] font-black px-3 py-1 rounded-bl-lg uppercase">
-                    Recomendado
+            <div class="bg-gradient-to-b from-gray-900 to-gray-950 border-2 border-yellow-500/50 p-5 rounded-2xl relative overflow-hidden gold-glow">
+                <div class="absolute top-0 right-0 bg-yellow-500 text-black text-[9px] font-black px-3 py-1 rounded-bl-lg uppercase">
+                    Más Solicitado
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <div>
-                        <span class="bg-slate-800 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-slate-700">Para Mayor Flujo</span>
+                        <span class="bg-yellow-500/10 text-yellow-400 text-[10px] font-semibold px-2.5 py-1 rounded-md border border-yellow-500/20">Para Mayor Flujo</span>
                         <h3 class="text-base font-bold text-white mt-2">2 Valets (9 Hrs)</h3>
                     </div>
                     <div class="text-right">
-                        <span class="text-xl font-extrabold text-slate-100">$10,800</span>
-                        <span class="text-[10px] text-slate-400 block">MXN / semanal</span>
+                        <span class="text-xl font-extrabold text-yellow-500">$10,800</span>
+                        <span class="text-[10px] text-gray-400 block">MXN / semanal</span>
                     </div>
                 </div>
-                <p class="text-xs text-slate-400 mb-3">$1,800 pesos diarios (6 días a la semana)[cite: 4].</p>
-                <ul class="text-xs text-slate-300 space-y-1.5 mb-4">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> 2 Empleados en coordinación[cite: 4]</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> Ideal para horas pico de restaurante</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> Control ágil de entradas y salidas</li>
+                <p class="text-xs text-gray-400 mb-3">$1,800 pesos diarios (6 días a la semana)[cite: 4].</p>
+                <ul class="text-xs text-gray-300 space-y-1.5 mb-4">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> 2 Empleados en coordinación[cite: 4]</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Ideal para horas pico de restaurante</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-500 text-[10px]"></i> Control ágil de entradas y salidas</li>
                 </ul>
-                <button onclick="cotizarPaquete('Servicio 2 Valets (9 hrs) - $10,800/sem')" class="touch-btn w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-2.5 rounded-xl text-xs shadow-md">
+                <button onclick="cotizarPaquete('Servicio 2 Valets (9 hrs) - $10,800/sem')" class="touch-btn w-full bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold py-2.5 rounded-xl text-xs shadow-lg shadow-yellow-500/20">
                     Solicitar Este Plan
                 </button>
             </div>
 
             <!-- DÍAS FESTIVOS -->
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+            <div class="bg-gray-900 border border-gray-800 p-4 rounded-2xl">
                 <div class="flex items-center justify-between">
                     <div>
                         <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
-                            <i class="fa-solid fa-calendar-star text-emerald-400"></i> Servicio Días Festivos
+                            <i class="fa-solid fa-calendar-star text-yellow-500"></i> Servicio en Días Festivos
                         </h3>
-                        <p class="text-[11px] text-slate-400 mt-0.5">1 Valet: $1,800/día | 2 Valets: $3,600/día[cite: 4]</p>
+                        <p class="text-[11px] text-gray-400 mt-0.5">1 Valet: $1,800/día | 2 Valets: $3,600/día[cite: 4]</p>
                     </div>
-                    <button onclick="cotizarPaquete('Servicio para Días Festivos')" class="touch-btn bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-1.5 rounded-lg border border-slate-700 font-semibold">
+                    <button onclick="cotizarPaquete('Servicio para Días Festivos')" class="touch-btn bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 font-semibold">
                         Consultar
                     </button>
                 </div>
@@ -210,17 +210,17 @@
     </section>
 
     <!-- COTIZADOR DINÁMICO -->
-    <section id="cotizador" class="px-4 py-7 bg-slate-900/80 my-4 rounded-3xl mx-3 border border-slate-800 max-w-md mx-auto">
+    <section id="cotizador" class="px-4 py-7 bg-gray-900/80 my-4 rounded-3xl mx-3 border border-yellow-500/30 max-w-md mx-auto">
         <div class="text-center mb-5">
-            <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded-full border border-emerald-500/20">Atención Directa</span>
+            <span class="bg-yellow-500/10 text-yellow-400 text-[10px] font-bold px-2.5 py-1 rounded-full border border-yellow-500/20">Atención Directa</span>
             <h2 class="text-lg font-bold text-white mt-1.5">Cotizador de Servicio</h2>
-            <p class="text-xs text-slate-400">Responde los datos y se abrirá el WhatsApp con la solicitud lista para enviar</p>
+            <p class="text-xs text-gray-400">Responde los datos y se abrirá el WhatsApp con la solicitud lista para enviar</p>
         </div>
 
         <form id="formCotizador" onsubmit="enviarCotizacionWhatsApp(event)" class="space-y-3.5">
             <div>
-                <label class="block text-[11px] font-semibold text-slate-300 mb-1">1. ¿Qué tipo de servicio buscas?</label>
-                <select id="tipoServicio" class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl p-3 text-xs focus:border-emerald-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">1. ¿Qué tipo de servicio buscas?</label>
+                <select id="tipoServicio" class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
                     <option value="Restaurante / Bar (Servicio Fijo)">Restaurante / Bar (Servicio Fijo)</option>
                     <option value="Evento Privado (Boda, XV, Cumpleaños)">Evento Privado (Boda, Fiesta, etc.)</option>
                     <option value="Plaza Comercial / Estacionamiento">Plaza Comercial / Estacionamiento</option>
@@ -229,13 +229,13 @@
             </div>
 
             <div>
-                <label class="block text-[11px] font-semibold text-slate-300 mb-1">2. Ubicación o Colonia en Tijuana</label>
-                <input type="text" id="ubicacion" placeholder="Ej. Col. Cacho, Zona Río, Playas" required class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl p-3 text-xs focus:border-emerald-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">2. Ubicación o Colonia en Tijuana</label>
+                <input type="text" id="ubicacion" placeholder="Ej. Col. Cacho, Zona Río, Playas" required class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
             </div>
 
             <div>
-                <label class="block text-[11px] font-semibold text-slate-300 mb-1">3. Personal Requerido</label>
-                <select id="capacidad" class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl p-3 text-xs focus:border-emerald-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">3. Personal o Capacidad Requerida</label>
+                <select id="capacidad" class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
                     <option value="1 Valet Parking (9 Horas)">1 Valet Parking (9 Horas)</option>
                     <option value="2 Valets Parking (9 Horas)">2 Valets Parking (9 Horas)</option>
                     <option value="3 o más Valets (Evento Grande)">3 o más Valets (Evento Grande)</option>
@@ -243,11 +243,11 @@
             </div>
 
             <div>
-                <label class="block text-[11px] font-semibold text-slate-300 mb-1">4. Tu Nombre o Nombre del Negocio</label>
-                <input type="text" id="nombreCliente" placeholder="Ej. Carlos Mendoza / Restaurante X" required class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl p-3 text-xs focus:border-emerald-500 outline-none">
+                <label class="block text-[11px] font-semibold text-gray-300 mb-1">4. Tu Nombre o Nombre del Negocio</label>
+                <input type="text" id="nombreCliente" placeholder="Ej. Carlos Mendoza / Restaurante X" required class="w-full bg-gray-950 border border-gray-800 text-white rounded-xl p-3 text-xs focus:border-yellow-500 outline-none">
             </div>
 
-            <button type="submit" class="touch-btn w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm mt-2">
+            <button type="submit" class="touch-btn w-full bg-green-600 hover:bg-green-500 text-white font-extrabold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm mt-2">
                 <i class="fa-brands fa-whatsapp text-lg"></i> Enviar WhatsApp para cotización
             </button>
         </form>
@@ -258,32 +258,32 @@
         <h2 class="text-base font-bold text-white mb-3 text-center">Preguntas Frecuentes</h2>
         
         <div class="space-y-2">
-            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
                 <button onclick="toggleFaq(1)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
                     <span>¿Qué experiencia tiene el personal de manejo?</span>
-                    <i id="faq-icon-1" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    <i id="faq-icon-1" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
                 </button>
-                <div id="faq-ans-1" class="hidden px-3.5 pb-3.5 text-xs text-slate-400">
+                <div id="faq-ans-1" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
                     Contamos con más de 5 años de trayectoria en Tijuana. Todo nuestro personal cuenta con licencia vigente y capacitación previa en manejo de autos automáticos y estándar.
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
                 <button onclick="toggleFaq(2)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
                     <span>¿Cómo funcionan las boletas de control?</span>
-                    <i id="faq-icon-2" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    <i id="faq-icon-2" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
                 </button>
-                <div id="faq-ans-2" class="hidden px-3.5 pb-3.5 text-xs text-slate-400">
+                <div id="faq-ans-2" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
                     Entregamos un boleto foliado numerado a cada cliente al recibir su auto para garantizar que únicamente el dueño pueda retirar su vehículo.
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
                 <button onclick="toggleFaq(3)" class="w-full p-3.5 text-left text-xs font-semibold text-white flex justify-between items-center">
                     <span>¿Cobran por evento único o por semana?</span>
-                    <i id="faq-icon-3" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    <i id="faq-icon-3" class="fa-solid fa-chevron-down text-yellow-500 transition-transform"></i>
                 </button>
-                <div id="faq-ans-3" class="hidden px-3.5 pb-3.5 text-xs text-slate-400">
+                <div id="faq-ans-3" class="hidden px-3.5 pb-3.5 text-xs text-gray-400">
                     Manejamos ambos esquemas: convenio semanal continuo de 6 días para restaurantes o costo por evento específico de un solo día.
                 </div>
             </div>
@@ -292,32 +292,32 @@
 
     <!-- SECCIÓN DE TRABAJO -->
     <section id="trabajo" class="px-5 py-6 max-w-md mx-auto">
-        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border border-slate-800 p-5 rounded-2xl text-center">
-            <i class="fa-solid fa-user-tie text-slate-300 text-3xl mb-2"></i>
+        <div class="bg-gradient-to-br from-yellow-500/10 via-gray-900 to-gray-950 border border-yellow-500/30 p-5 rounded-2xl text-center">
+            <i class="fa-solid fa-user-tie text-yellow-500 text-3xl mb-2"></i>
             <h2 class="text-base font-bold text-white">¿Buscas empleo como Valet Parking?</h2>
-            <p class="text-xs text-slate-300 mt-1 mb-4">
+            <p class="text-xs text-gray-300 mt-1 mb-4">
                 Únete al equipo de Tony's Valet Parking. Requisitos: Licencia de conducir vigente, puntualidad y excelente actitud.
             </p>
-            <button onclick="solicitarEmpleoWhatsApp()" class="touch-btn bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs py-3 px-5 rounded-xl shadow w-full flex items-center justify-center gap-2">
+            <button onclick="solicitarEmpleoWhatsApp()" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold text-xs py-3 px-5 rounded-xl shadow w-full flex items-center justify-center gap-2">
                 <i class="fa-brands fa-whatsapp text-base"></i> Postularme por WhatsApp
             </button>
         </div>
     </section>
 
-    <!-- FOOTER CON ESTILO DE LONA FÍSICA -->
-    <footer class="text-center py-6 px-4 border-t border-slate-900 text-slate-500 text-[11px]">
-        <img src="IMG_3166.jpg" alt="Tony's Valet Parking" class="h-10 w-auto mx-auto mb-2 opacity-90 rounded">
-        <p class="font-bold text-slate-300 mb-1">Tony's Valet Parking Tijuana</p>
-        <p class="text-emerald-400 font-semibold mb-3"><i class="fa-solid fa-phone"></i> 664.318.6915[cite: 9, 10]</p>
-        <p class="text-[10px] text-slate-600">© 2026 Tony's Valet Parking. Todos los derechos reservados.</p>
+    <!-- CONTACTO DIRECTO / PIE DE PÁGINA -->
+    <footer class="text-center py-6 px-4 border-t border-gray-900 text-gray-500 text-[11px]">
+        <img src="logo.jpg" alt="Tony's Valet Parking" class="h-10 w-auto mx-auto mb-2 opacity-80 rounded-md">
+        <p class="font-bold text-gray-300 mb-1">Tony's Valet Parking Tijuana</p>
+        <p class="text-yellow-500 font-semibold mb-3"><i class="fa-solid fa-phone"></i> 664 318 6915[cite: 4]</p>
+        <p class="text-[10px] text-gray-600">© 2026 Tony's Valet Parking. Todos los derechos reservados.</p>
     </footer>
 
     <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP -->
-    <a href="https://wa.me/526643186915?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20Tony's%20Valet%20Parking" target="_blank" class="fixed bottom-4 right-4 bg-emerald-500 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center text-2xl hover:scale-110 transition-all border border-emerald-400">
+    <a href="https://wa.me/526643186915?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20Tony's%20Valet%20Parking" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center text-2xl hover:scale-110 transition-all gold-glow">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- LÓGICA JAVASCRIPT -->
+    <!-- LÓGICA DE JAVASCRIPT -->
     <script>
         const TELEFONO_CONTACTO = "526643186915";
 
