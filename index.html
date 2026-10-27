@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony's Valet Parking | Tijuana</title>
-    <!-- Tailwind CSS desde CDN para diseño moderno sin configuraciones -->
+    <!-- Tailwind CSS desde CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
         .touch-btn { touch-action: manipulation; }
-        .gold-glow { box-shadow: 0 0 20px rgba(234, 179, 8, 0.15); }
+        .gold-glow { box-shadow: 0 0 20px rgba(234, 179, 8, 0.2); }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans pb-24 selection:bg-yellow-500 selection:text-black">
@@ -25,25 +25,26 @@
         <span>Servicio disponible hoy en Tijuana | Col. Cacho & Alrededores</span>
     </div>
 
-    <!-- HEADER / ENCABEZADO FIJO -->
-    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-yellow-500/20 px-4 py-3 flex justify-between items-center">
+    <!-- HEADER / ENCABEZADO FIJO CON LOGO -->
+    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-yellow-500/20 px-4 py-2.5 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <div class="bg-yellow-500 text-black p-1.5 rounded-lg font-black">
-                <i class="fa-solid fa-car-side text-lg"></i>
-            </div>
-            <div>
-                <span class="font-extrabold text-base tracking-wide text-white block leading-none">TONY'S <span class="text-yellow-500">VALET</span></span>
-                <span class="text-[9px] text-gray-400 tracking-wider">PARKING TIJUANA</span>
-            </div>
+            <!-- LOGO OFICIAL -->
+            <img src="logo.jpg" alt="Tony's Valet Parking Logo" class="h-9 w-auto rounded-md border border-gray-800">
         </div>
         <a href="#cotizador" class="touch-btn bg-yellow-500 hover:bg-yellow-400 text-gray-950 font-extrabold px-3.5 py-2 rounded-xl text-xs transition-all flex items-center gap-1.5 shadow-lg shadow-yellow-500/20">
             <i class="fa-solid fa-calculator"></i> Cotizar
         </a>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION CON LOGO DESTACADO -->
     <section class="px-5 py-8 text-center bg-radial from-gray-900 to-gray-950 relative overflow-hidden">
-        <div class="inline-flex items-center gap-1.5 bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-yellow-500/30 mb-4 gold-glow">
+        
+        <!-- LOGO PRINCIPAL -->
+        <div class="mb-4 flex justify-center">
+            <img src="logo.jpg" alt="Tony's Valet Parking" class="h-28 w-auto rounded-2xl shadow-2xl border border-yellow-500/30 gold-glow">
+        </div>
+
+        <div class="inline-flex items-center gap-1.5 bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-yellow-500/30 mb-4">
             <i class="fa-solid fa-award text-yellow-500"></i>
             <span>5 Años de Experiencia en Tijuana</span>
         </div>
@@ -305,6 +306,7 @@
 
     <!-- CONTACTO DIRECTO / PIE DE PÁGINA -->
     <footer class="text-center py-6 px-4 border-t border-gray-900 text-gray-500 text-[11px]">
+        <img src="logo.jpg" alt="Tony's Valet Parking" class="h-10 w-auto mx-auto mb-2 opacity-80 rounded-md">
         <p class="font-bold text-gray-300 mb-1">Tony's Valet Parking Tijuana</p>
         <p class="text-yellow-500 font-semibold mb-3"><i class="fa-solid fa-phone"></i> 664 318 6915[cite: 4]</p>
         <p class="text-[10px] text-gray-600">© 2026 Tony's Valet Parking. Todos los derechos reservados.</p>
